@@ -4,10 +4,11 @@ import App from "./App";
 
 
 
+
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <App nota="2"/>
+    <App></App>
   </React.StrictMode>
 );
 

@@ -1,0 +1,11 @@
+
+body, h1 {
+    margin: 0 auto;
+}
+
+.menu {
+    text-align: center;
+    padding: 20px;
+    color: white;
+}
+

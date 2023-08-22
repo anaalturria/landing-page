@@ -1,34 +1,22 @@
+import PrimeiroComp from "./components/PrimeiroComp";
+import SegundoComp from "./components/SegundoComp";
+import TerceiroComp from "./components/TerceiroComp";
+import QuartoComp from "./components/QuartoComp";
+import Imagem from "./components/img/taytayf1.jpg";
+import Imagem2 from "./components/img/theerastour.jpg";
+import Rodape from "./components/Rodape";
 
-import BoasVindas from './components/BoasVindas';
-import Contador from './components/Contador';
-import ExibeNota from './components/Exibenota';
-import { useState } from 'react';
+
 
 function App(props) {
 
-  
-
-  let nota = props.nota;
-  let aprovado = false;
-  let reprovado = false; 
-  if( nota > 5){
-    aprovado = true;
-  } else {
-    reprovado = true;
-  }
-
-
-
   return (
     <>
-    { aprovado && 
-      <ExibeNota mensagem="Aprovado" nota={props.nota} />
-    }
-    { reprovado && 
-      <ExibeNota mensagem="Reprovado" nota={props.nota} />
-    }
-    <Contador></Contador>
-    <BoasVindas></BoasVindas>
+      <PrimeiroComp cor="#360C7A" ></PrimeiroComp>
+      <SegundoComp foto={Imagem}/>
+      <TerceiroComp foto2={Imagem2}></TerceiroComp>
+      <QuartoComp agora="spotify"></QuartoComp>
+      <Rodape insta="taylorswift" sp="taylor swift" email="taylorswift.tv@gmail.com"></Rodape>
 
     </>
   );

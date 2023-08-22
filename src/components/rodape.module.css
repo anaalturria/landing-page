@@ -1,0 +1,14 @@
+.rodape {
+    background-color: #3D1B76;
+    height: 350px;
+    width: 100%;
+    margin-top: 100px;
+    margin-bottom: 0;
+    
+}
+.rodape h1, h2 {
+    display: block;
+    color: white;
+    font-size:medium;
+    padding: 20px;
+}
